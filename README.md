@@ -1,12 +1,19 @@
-# React + Vite
+## TitanOS frontend test task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Objective
+Create a horizontal list that can be navigated with left/right keyboards keys.
 
-Currently, two official plugins are available:
+### Requirements
+- Focused item always has to be in the first position.
+- Use React state management library of your choice. Even though this application is quite basic, avoid using only the context API.
+- Changing focus from one item to another should have a smooth transition.
+- Use `images.artwork_portrait` as an item cover image.
+- Do not use any libraries for list navigation.
+- Implement the tests that you deem necessary (unit/e2e). 
+- Feel free to use any react boilerplate you prefer for this project.
+- The result should be shared as a git repository (private or public).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Data
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Use the following endpoint to retrieve the list contents:
+https://acc01.titanos.tv/v1/genres/14/contents?market=es&device=tv&locale=es&page=1&per_page=50
